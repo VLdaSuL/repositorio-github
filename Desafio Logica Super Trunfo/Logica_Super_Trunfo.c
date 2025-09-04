@@ -14,6 +14,9 @@
         double densidade1, densidade2, percapita1, percapita2;
         double super1, super2;
         int opcao, batalha;
+        int carta1, carta2;
+        carta1 = 0;
+        carta2 = 0;        
 
     printf("\n\nJOGO SUPER TRUNFO\n\n");
     printf("1. Regras do jogo\n");
@@ -89,7 +92,16 @@
         //Calculando super poderes
         super1 = (float)(populacao1 + area1 + pib1 + turistico1 + percapita1);
         super2 = (float)(populacao2 + area2 + pib2 + turistico2 + percapita2);        
-
+    
+        //Somando pontuação com a operação encremento
+    
+        populacao1 > populacao2 ? (carta1++) : (carta2++);
+        area1 > area2 ? (carta1++) : (carta2++);
+        pib1 > pib2 ? (carta1++) : (carta2++);
+        turistico1 > turistico2 ? (carta1++) : (carta2++);
+        densidade1 < densidade2 ? (carta1++) : (carta2++);
+        percapita1 > percapita2 ? (carta1++) : (carta2++);
+        super1 > super2 ? (carta1++) : (carta2++);
 /*        
         //Cartas do jogo;
         printf("\nCartas Cadastradas:\n");
