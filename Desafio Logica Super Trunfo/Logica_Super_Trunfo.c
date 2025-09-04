@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
     int main(){
 
@@ -41,7 +43,6 @@
         break;
 
         case 2:        
-
         //Cadastrando primeira carta;
         printf("Cadastrando primeira carta: \n");
 
@@ -93,8 +94,7 @@
         super1 = (float)(populacao1 + area1 + pib1 + turistico1 + percapita1);
         super2 = (float)(populacao2 + area2 + pib2 + turistico2 + percapita2);        
     
-        //Somando pontuação com a operação encremento
-    
+        //Somando pontuação com a operação encremento  
         populacao1 > populacao2 ? (carta1++) : (carta2++);
         area1 > area2 ? (carta1++) : (carta2++);
         pib1 > pib2 ? (carta1++) : (carta2++);
@@ -102,9 +102,21 @@
         densidade1 < densidade2 ? (carta1++) : (carta2++);
         percapita1 > percapita2 ? (carta1++) : (carta2++);
         super1 > super2 ? (carta1++) : (carta2++);
-/*        
+
+        printf("\nPlacar do Jogo: \n");
+   
+        if (carta1 > carta2){
+            printf("\nJogador com a carta 1 venceu. Parabéns!!!\n");
+        } else if (carta1 < carta2) {
+            printf("\nJogador com a carta 2 venceu. Parabéns!!!\n");
+        } else {
+            printf("\nIncrivel, o jogo deu empate!!!\n");
+        }
+            printf("Placar da Batalha: \n");
+            printf("Carta 1: %d pontos e Carta 2: %d pontos.\n", carta1, carta2);
+       
         //Cartas do jogo;
-        printf("\nCartas Cadastradas:\n");
+        printf("\nInformação das Cartas:\n");
 
         //Impressão primeira carta;
         printf("\nCARTA 1\n");
@@ -117,6 +129,7 @@
         printf("Número de pontos turísticos: %d\n", turistico1);
         printf("Densidade Populacional: %.2f hab/km²\n", densidade1);
         printf("PIB per Capita: %.2f reais\n", percapita1);
+        printf("Super Poder da Carta 1: %.2f pontos.\n", super1);
 
         //Impressão segunda carta
         printf("\nCARTA 2\n");
@@ -129,7 +142,19 @@
         printf("Número de pontos turísticos: %d\n", turistico2);
         printf("Densidade Populacional: %.2f hab/km²\n", densidade2);
         printf("PIB per Capita: %.2f reais\n", percapita2);
+        printf("Super Poder da Carta 2: %.2f pontos.\n\n\n", super2);
+        break;
+        
+        case 3:
+            printf("\n\nFIM DE JOGO!!!\n\n");            
+        break;
 
+        default:
+        printf("\n\nOpção inválida!\n");
+        printf("\nFIM DE JOGO!!!\n\n"); 
+        break;
+    }
+/*        
         //Comparando cartas 1 e 2;
         printf("\nBatalha das cartas:\n");
         printf("Resultado 1, Vitória Carta 1\n");
@@ -142,7 +167,7 @@
         printf("Densidade populacional - carta 1 x carta 2 - Resultado: %d\n", densidade1 < densidade2);         
         printf("PIB per Capita - carta 1 x carta 2 - Resultado: %d\n", percapita1 > percapita2);   
         printf("Super Poder - carta 1 x carta 2 - Resultado: %d\n\n\n", pib1 > pib2); 
-*/
+
         //Jogador escolhe atributo e verifica resultado da batalha
         printf("\n\nEscolha um atributo, e veja carta vencedora:\n\n");
         printf("1. População\n");
@@ -278,6 +303,8 @@
         printf("\nFIM DE JOGO!!!\n\n");
     break;
     }
+*/
+
 
 return 0;
 
