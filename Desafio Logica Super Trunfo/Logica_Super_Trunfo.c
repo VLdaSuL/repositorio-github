@@ -13,6 +13,7 @@
         char cidade1[15], cidade2[15];
         double densidade1, densidade2, percapita1, percapita2;
         double super1, super2;
+        int opcao, batalha;
 
         //Cadastrando primeira carta;
         printf("Cadastrando primeira carta: \n");
