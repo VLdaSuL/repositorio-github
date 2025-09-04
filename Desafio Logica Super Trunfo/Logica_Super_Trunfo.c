@@ -2,8 +2,8 @@
 #include <stdlib.h>
 #include <time.h>
 
-    int main(){
-
+    int main() {
+/* 
         //Projeto faculdade;
         printf("\nProjeto Jogo Super Trunfo\n");
 
@@ -16,7 +16,7 @@
         double densidade1, densidade2, percapita1, percapita2;
         double super1, super2;
         int opcao, batalha;
-        int carta1, carta2;
+       int carta1, carta2;
         carta1 = 0;
         carta2 = 0;        
 
@@ -27,7 +27,7 @@
 
     printf("\n\nDigite uma opção:");
     scanf("%d", &opcao);
-
+ 
     switch (opcao) {
         case 1:
         printf("\nEste é o jogo Super Trunfo\n\n");
@@ -41,7 +41,8 @@
         printf("Boa Jogo!!!.\n\n");
         printf("Volte ao menu inicial.\n\n");
         break;
-
+    
+ 
         case 2:        
         //Cadastrando primeira carta;
         printf("Cadastrando primeira carta: \n");
@@ -144,7 +145,8 @@
         printf("PIB per Capita: %.2f reais\n", percapita2);
         printf("Super Poder da Carta 2: %.2f pontos.\n\n\n", super2);
         break;
-        
+ 
+      
         case 3:
             printf("\n\nFIM DE JOGO!!!\n\n");            
         break;
@@ -154,7 +156,7 @@
         printf("\nFIM DE JOGO!!!\n\n"); 
         break;
     }
-/*        
+        
         //Comparando cartas 1 e 2;
         printf("\nBatalha das cartas:\n");
         printf("Resultado 1, Vitória Carta 1\n");
